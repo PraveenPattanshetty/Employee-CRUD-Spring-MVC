@@ -49,6 +49,10 @@ public class EmployeeController {
 	public ModelAndView UpdateEmployee(@ModelAttribute Employee employee, @RequestParam String date) {
 		return service.UpdateEmployee(employee, date);
 	}
+	@GetMapping("findbyid")
+	public ModelAndView fetchById(@RequestParam int id){
+		return service.fechById(id);
+	}
 
 }
 // andView.setViewName("InsertData.jsp");==ModelAndView andView = new

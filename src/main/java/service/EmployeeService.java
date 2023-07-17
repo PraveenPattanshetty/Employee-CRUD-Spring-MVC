@@ -85,4 +85,9 @@ public class EmployeeService {
 		return andView;
 	}
 
+	public ModelAndView fechById(int id) {
+		ModelAndView view=new ModelAndView("FetchById");
+		view.addObject("emp",dao.find(id));
+		return view;
+	}
 }

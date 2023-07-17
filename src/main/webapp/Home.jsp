@@ -92,7 +92,7 @@ h1 {
 			<button type="button" class="btn btn-danger">Insert Data</button>
 		</a> <a href="fetchall">
 			<button type="button" class="btn btn-success">Fetch Data</button>
-		</a> <a href="">
+		</a> <a href="TakeId.jsp">
 			<button type="button" class="btn btn-warning">Fetch Data BY
 				Id</button>
 		</a>
