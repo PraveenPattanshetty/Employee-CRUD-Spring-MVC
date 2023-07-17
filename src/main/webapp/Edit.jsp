@@ -25,13 +25,10 @@ input, button {
 		<spring:form action="updateemployee" method="post"
 			modelAttribute="emp">
 			<spring:input type="text" path="id" readonly="readonly" />
-			<spring:input type="text" placeholder="Enter your Name" path="name" />
-			<spring:input type="text" placeholder="Enter your Mobile Number"
-				path="mobile" maxlength="10" />
-			<spring:input type="text" placeholder="Enter your Salary"
-				path="salary" />
-			<input type="date" placeholder="Enter your Date of Joining"
-				name="date" value="${emp.getDoj() }">
+			<spring:input type="text" path="name" />
+			<spring:input type="text" path="mobile" maxlength="10" />
+			<spring:input type="text" path="salary" />
+			<input type="date" name="date" value="${emp.getDoj() }">
 			<button>Update</button>
 			<button type="reset">Reset</button>
 		</spring:form>

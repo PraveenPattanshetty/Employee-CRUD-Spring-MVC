@@ -91,7 +91,7 @@ h1 {
 		<a href="loademployee">
 			<button type="button" class="btn btn-danger">Insert Data</button>
 		</a> <a href="fetchall">
-			<button type="button" class="btn btn-success">Fetch Data</button>
+			<button type="button" class="btn btn-success">Fetch All Data</button>
 		</a> <a href="TakeId.jsp">
 			<button type="button" class="btn btn-warning">Fetch Data BY
 				Id</button>

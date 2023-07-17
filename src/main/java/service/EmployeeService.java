@@ -25,14 +25,12 @@ public class EmployeeService {
 	@Autowired
 	EmployeeDAO dao;
 
-	@GetMapping("loademployee")
 	public ModelAndView loadEmployee() {
 		ModelAndView andView = new ModelAndView("InsertData");
 		andView.addObject("employee", employee);
 		return andView;
 	}
 
-	@PostMapping("saveemployee")
 	public ModelAndView SaveEmployee(Employee employee, String date) {
 
 		employee.setDoj(Date.valueOf(date));
@@ -61,7 +59,7 @@ public class EmployeeService {
 		List<Employee> list = dao.fetch();
 		if (list.isEmpty()) {
 			andView.addObject("msg", "No Data Available");
-			andView.setViewName("Home.jsp");
+			andView.setViewName("Home");
 		} else {
 			andView.addObject("msg", "Data deleted succesfully");
 			andView.addObject("list", list);
